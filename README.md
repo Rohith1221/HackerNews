@@ -23,3 +23,7 @@ Search for news articles as for your interest.
 ![Screenshot (306)](https://user-images.githubusercontent.com/62758125/153766565-4d658450-e691-4c4e-a803-33c0b59e862e.png)
 
 Click on any block to learn more details about the article.
+
+![Screenshot (307)](https://user-images.githubusercontent.com/62758125/153766671-4de6fad6-4683-4c0f-b199-4439c7a62218.png)
+
+This project uses https://hn.algolia.com/api .
