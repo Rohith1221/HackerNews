@@ -14,3 +14,9 @@ To install all the required packages to run the applkication.
 ### `npm start`
 To initialize the application.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+### Screen shots
+![Screenshot (303)](https://user-images.githubusercontent.com/62758125/153766289-794e2374-9403-4e62-93eb-730dff6c9956.png)
+
+Search for news articles as for your interest
+
