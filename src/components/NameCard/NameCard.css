@@ -1,0 +1,29 @@
+.namecard-container {
+  font-family: poppins, sans-serif;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nc-li {
+  background-color: rgb(108, 186, 255);
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-radius: 30px;
+  color: rgb(9, 4, 59);
+  box-shadow: 2px 5px 2px rgb(255, 255, 255);
+  transition: 0.3s transform;
+}
+.nc-li:hover {
+  transform: scale(1.02);
+}
+a {
+  text-decoration: none;
+  font-style: italic;
+}

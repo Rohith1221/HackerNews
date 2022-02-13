@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Header from "./components/Header/Header";
+import Search from "./components/search/Search";
+import "./App.css";
+import ResultsContainer from "./components/ResultsContainer/ResultsContainer";
+function App(props) {
+  const [headExpanded, setHeadExpanded] = useState(true);
+  const [Data, setData] = useState([]);
 
-function App() {
+  const handleInputChange = (inputText) => {
+    // alert("value changed");
+    inputText.length > 0 ? setHeadExpanded(false) : setHeadExpanded(true);
+    getData(inputText);
+    console.log("text changed " + inputText);
+  };
+
+  const url = "http://hn.algolia.com/api/v1/search?query=";
+
+  const getData = (e) => {
+    fetch(url + `${e}`)
+      .then((response) => response.json())
+      .then((json) => {
+        setData(json.hits);
+        console.log(json.hits);
+      });
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header headerExpanded={headExpanded}></Header>
+      <Search onInputChange={handleInputChange}></Search>
+      <ResultsContainer data={Data}></ResultsContainer>
+      <footer>
+        <code>
+          <center>
+            made by rohith <i class="fa-solid fa-laptop"></i>
+          </center>
+        </code>
+      </footer>
     </div>
   );
 }

@@ -1,0 +1,52 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.head-text {
+  font-size: 3em;
+  font-family: "Prompt", sans-serif;
+  font-weight: 900;
+  margin: 0px 0px 30px 0;
+  transition: font-size 1s;
+}
+
+.head-text-exp {
+  font-size: 3em;
+  font-family: "Prompt", sans-serif;
+  font-weight: 900;
+  margin: 0px 0px 30px 0;
+}
+.head-text-con {
+  font-size: 2em;
+  font-family: "Prompt", sans-serif;
+  font-weight: 900;
+  margin: 0px 0px 30px 0;
+}
+
+.header-img {
+  /* width: 250px; */
+  width: auto;
+  transition: max-width 1s, min-width 1s;
+}
+.header-img-exp {
+  min-width: 230px;
+  max-width: 250px;
+}
+.header-img-con {
+  max-width: 80px;
+  min-width: 60px;
+}
+button {
+  width: 200px;
+  height: 200px;
+}
+
+.italics {
+  background: -webkit-linear-gradient(#088f67, #44bff8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* #a1c4fd → #c2e9fb */
