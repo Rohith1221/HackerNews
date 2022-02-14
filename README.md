@@ -9,7 +9,7 @@ After navigating into the main project directory.
 Run the following commands.
 
 ### `npm install`
-To install all the required packages to run the application.
+To install all the required dependencies to run the application.
 
 ### `npm start`
 To initialize the application.
