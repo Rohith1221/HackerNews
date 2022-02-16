@@ -14,7 +14,7 @@ function App(props) {
     console.log("text changed " + inputText);
   };
 
-  const url = "http://hn.algolia.com/api/v1/search?query=";
+  const url = "https://hn.algolia.com/api/v1/search?query=";
 
   const getData = (e) => {
     fetch(url + `${e}`)
@@ -25,7 +25,7 @@ function App(props) {
       });
   };
   return (
-    <div>
+    <div className="app-container">
       <Header headerExpanded={headExpanded}></Header>
       <Search onInputChange={handleInputChange}></Search>
       <ResultsContainer data={Data}></ResultsContainer>
