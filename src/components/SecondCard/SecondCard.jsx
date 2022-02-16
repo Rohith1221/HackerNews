@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Children } from "react/cjs/react.production.min";
 import "./SecondCard.css";
 function SecondCard({ id, info, child }) {
   return (
@@ -25,7 +26,7 @@ function SecondCard({ id, info, child }) {
                   Comment By{" "}
                   {item.author == null ? "AUTHOR NOT FOUND" : item.author} :
                 </b>
-                {item.text}
+                <li dangerouslySetInnerHTML={{ __html: item.text }}></li>
               </li>
             );
           })}
