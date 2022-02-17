@@ -3,3 +3,26 @@ body {
   overflow-x: hidden;
   color: #eee;
 }
+.soc-icons {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fa-brands,
+.rohith {
+  transition: color 0.5s;
+}
+
+.fa-brands:hover,
+.rohith:hover {
+  color: rgb(97, 205, 247);
+  text-shadow: 0 0 10px blue;
+}
+.git-icon,
+.link-icon {
+  color: rgb(255, 255, 255);
+}

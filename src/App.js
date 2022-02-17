@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header/Header";
 import Search from "./components/search/Search";
 import "./App.css";
+
 import ResultsContainer from "./components/ResultsContainer/ResultsContainer";
 function App(props) {
   const [headExpanded, setHeadExpanded] = useState(true);
@@ -32,7 +33,25 @@ function App(props) {
       <footer>
         <code>
           <center>
-            made by rohith <i class="fa-solid fa-laptop"></i>
+            <div className="soc-icons">
+              <a
+                href="https://github.com/Rohith1221"
+                target="__blank"
+                className="git-icon"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/margani-rohith/"
+                className="link-icon"
+                target="__blank"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <p>
+                made by <span className="rohith">rohith</span>
+              </p>
+            </div>
           </center>
         </code>
       </footer>
@@ -41,3 +60,7 @@ function App(props) {
 }
 
 export default App;
+
+//  <center>
+//    made by rohith <i class="fa-solid fa-laptop"></i>
+//  </center>;
